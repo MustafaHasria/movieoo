@@ -1,4 +1,4 @@
-package com.newhorizon.movieoo.model.main;
+package com.newhorizon.movieoo.view.main;
 
 public class MainPresenter {
     //region Variables

@@ -12,7 +12,8 @@ public class ApiClient {
 
     public static Retrofit getAPIClient() {
         if (retrofit == null) {
-            retrofit = new Retrofit.Builder().baseUrl("https://api.tvmaze.com/")
+            retrofit = new Retrofit.Builder()
+                    .baseUrl("https://api.tvmaze.com/")
                     .client(getHttpOkClient())
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();

@@ -14,7 +14,7 @@
         android:theme="@style/Theme.Movieoo"
         tools:targetApi="31">
         <activity
-            android:name=".model.main.MainActivity"
+            android:name=".view.main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

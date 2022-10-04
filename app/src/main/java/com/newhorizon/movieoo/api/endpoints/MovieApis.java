@@ -1,6 +1,6 @@
 package com.newhorizon.movieoo.api.endpoints;
 
-import com.newhorizon.movieoo.model.main.ShowMoviesResponse;
+import com.newhorizon.movieoo.view.main.ShowMoviesResponse;
 
 import java.util.List;
 
