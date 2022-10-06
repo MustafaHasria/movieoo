@@ -9,7 +9,7 @@ import retrofit2.http.GET;
 
 public interface MovieApis {
 
-    String SHOW_ALL = "shows";
+    final String SHOW_ALL = "shows";
 
 
     @GET(SHOW_ALL)

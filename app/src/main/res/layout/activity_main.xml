@@ -6,13 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".view.main.MainActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
+    <TextView
+        android:id="@+id/first_movie"
         android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/activity_main_recycler_view"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        android:layout_width="match_parent"
+        app:spanCount="2"
         android:layout_height="match_parent"
         android:text="Hello World!"
         app:layout_constraintBottom_toBottomOf="parent"
+        tools:listitem="@layout/recycler_item_movie"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/activity_main_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:indicatorColor="@color/black"
+        app:indicatorName="BallTrianglePathIndicator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,6 +12,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class MovieCaller {
+
     //region Variables
     MovieApis movieApis;
     Call<List<ShowMoviesResponse>> showMovieResponseCall;
@@ -30,12 +31,12 @@ public class MovieCaller {
         showMovieResponseCall.enqueue(new Callback<List<ShowMoviesResponse>>() {
             @Override
             public void onResponse(Call<List<ShowMoviesResponse>> call, Response<List<ShowMoviesResponse>> response) {
-
+                apiStateListener.onSuccess(response.body(), 12, "ahamad");
             }
 
             @Override
             public void onFailure(Call<List<ShowMoviesResponse>> call, Throwable t) {
-
+                apiStateListener.onFailure("String");
             }
         });
     }
