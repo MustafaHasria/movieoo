@@ -31,7 +31,7 @@ public class MovieCaller {
         showMovieResponseCall.enqueue(new Callback<List<ShowMoviesResponse>>() {
             @Override
             public void onResponse(Call<List<ShowMoviesResponse>> call, Response<List<ShowMoviesResponse>> response) {
-                apiStateListener.onSuccess(response.body(), 12, "ahamad");
+                apiStateListener.onSuccess(response.body());
             }
 
             @Override
